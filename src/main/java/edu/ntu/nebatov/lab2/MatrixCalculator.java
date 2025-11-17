@@ -1,4 +1,4 @@
-package edu.ntu.nebatov;
+package edu.ntu.nebatov.lab2;
 
 import java.util.Random;
 import java.util.Scanner;

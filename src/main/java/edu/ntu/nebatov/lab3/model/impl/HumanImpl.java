@@ -1,9 +1,10 @@
-package edu.ntu.nebatov.lab3.controller.impl;
+package edu.ntu.nebatov.lab3.model.impl;
 
 import edu.ntu.nebatov.lab3.model.Human;
 import edu.ntu.nebatov.lab3.model.Sex;
 
 public class HumanImpl implements Human {
+
     private final String name;
     private final String surname;
     private final String patronymic;
@@ -17,32 +18,19 @@ public class HumanImpl implements Human {
     }
 
     @Override
-    public String getName() {
-        return name;
-    }
+    public String getName() { return name; }
 
     @Override
-    public String getSurname() {
-        return surname;
-    }
+    public String getSurname() { return surname; }
 
     @Override
-    public String getPatronymic() {
-        return patronymic;
-    }
+    public String getPatronymic() { return patronymic; }
 
     @Override
-    public Sex getSex() {
-        return sex;
-    }
+    public Sex getSex() { return sex; }
 
     @Override
     public String getFullName() {
         return surname + " " + name + " " + patronymic;
-    }
-
-    @Override
-    public String toString() {
-        return getFullName() + " (" + sex + ")";
     }
 }

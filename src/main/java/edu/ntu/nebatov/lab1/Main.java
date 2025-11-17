@@ -1,4 +1,4 @@
-package edu.ntu.nebatov;
+package edu.ntu.nebatov.lab1;
 
 public class Main  {
     public static void main(String[] args) {
