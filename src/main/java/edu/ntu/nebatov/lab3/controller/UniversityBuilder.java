@@ -1,55 +1,68 @@
 package edu.ntu.nebatov.lab3.controller;
 
 import edu.ntu.nebatov.lab3.model.*;
-import edu.ntu.nebatov.lab3.model.impl.HumanImpl;
+import edu.ntu.nebatov.lab3.model.Impl.*;
 
 public class UniversityBuilder {
 
-    public University createTypicalUniversity() {
+    private final HumanCreator humanCreator;
+    private final StudentCreator studentCreator;
+    private final GroupCreator groupCreator;
+    private final DepartmentCreator departmentCreator;
+    private final FacultyCreator facultyCreator;
+    private final UniversityCreator universityCreator;
 
-        UniversityCreator universityCreator = new UniversityCreator();
-        FacultyCreator facultyCreator = new FacultyCreator();
-        DepartmentCreator departmentCreator = new DepartmentCreator();
-        GroupCreator groupCreator = new GroupCreator();
-        StudentCreator studentCreator = new StudentCreator();
-
-        Human rector = new HumanImpl("Oleksandr", "Azukovkiy", "Oleksandrovich", Sex.MALE);
-
-        University uni = universityCreator.createUniversity("NTU", rector);
-
-        Human facHead = new HumanImpl("Maksym", "Shevchenko", "Yuriovych", Sex.MALE);
-        Faculty faculty = facultyCreator.createFaculty("FIT", facHead);
-        uni.addFaculty(faculty);
-
-        Human depHead = new HumanImpl("Olena", "Vasylkiv", "Serhiyovych", Sex.FEMALE);
-        Department dep = departmentCreator.createDepartment("CS Department", depHead);
-        faculty.addDepartment(dep);
-
-        Human groupHead = new HumanImpl("Andriy", "Koval", "Olehovych", Sex.MALE);
-        Group group = groupCreator.createGroup("124-22-2", groupHead);
-        dep.addGroup(group);
-
-        group.addStudent(studentCreator.createStudent("Dmytro", "Lysenko", "Volodymyrovych", Sex.MALE));
-        group.addStudent(studentCreator.createStudent("Sofia", "Kravets", "Olehovych", Sex.FEMALE));
-
-        printUniversity(uni);
-
-        return uni;
+    public UniversityBuilder() {
+        this.humanCreator = new HumanCreatorImpl();
+        this.studentCreator = new StudentCreatorImpl();
+        this.groupCreator = new GroupCreatorImpl(studentCreator);
+        this.departmentCreator = new DepartmentCreatorImpl(groupCreator);
+        this.facultyCreator = new FacultyCreatorImpl(departmentCreator);
+        this.universityCreator = new UniversityCreatorImpl(facultyCreator);
     }
 
-    private void printUniversity(University uni) {
-        System.out.println("University: " + uni.getName() + " | Head: " + uni.getHead().getFullName());
-        for (Faculty f : uni.getFaculties()) {
-            System.out.println("  Faculty: " + f.getName() + " | Head: " + f.getHead().getFullName());
-            for (Department d : f.getDepartments()) {
-                System.out.println("    Department: " + d.getName() + " | Head: " + d.getHead().getFullName());
-                for (Group g : d.getGroups()) {
-                    System.out.println("      Group: " + g.getName() + " | Head: " + g.getHead().getFullName());
-                    for (Student s : g.getStudents()) {
-                        System.out.println("        Student: " + s.getFullName());
-                    }
-                }
-            }
-        }
+    public University createTypicalUniversity() {
+        Human rector = humanCreator.createHuman("John", "Peterson", "Michael", Sex.MALE);
+        University university = universityCreator.createUniversity("National Technical University", rector);
+
+        Faculty csFaculty = createComputerScienceFaculty();
+        university.addFaculty(csFaculty);
+
+        return university;
+    }
+
+    private Faculty createComputerScienceFaculty() {
+        Human dean = humanCreator.createHuman("Helen", "Kovalenko", "Peter", Sex.FEMALE);
+        Faculty faculty = facultyCreator.createFaculty("Faculty of Computer Science", dean);
+
+        Department software = createSoftwareDepartment();
+        faculty.addDepartment(software);
+
+        return faculty;
+    }
+
+    private Department createSoftwareDepartment() {
+        Human head = humanCreator.createHuman("Sergey", "Melnyk", "Alexander", Sex.MALE);
+        Department department = departmentCreator.createDepartment("Software Engineering Department", head);
+
+        Group group = createFirstYearGroup();
+        department.addGroup(group);
+
+        return department;
+    }
+
+    private Group createFirstYearGroup() {
+        Human curator = humanCreator.createHuman("Maria", "Shevchenko", "Vasyl", Sex.FEMALE);
+        Group group = groupCreator.createGroup("SE-101", curator);
+
+        populateGroup(group);
+
+        return group;
+    }
+
+    private void populateGroup(Group group) {
+        group.addStudent(studentCreator.createStudent("Andrew", "Tkachenko", "Ivan", Sex.MALE, "ST2024001"));
+        group.addStudent(studentCreator.createStudent("Anna", "Bondarenko", "Sergey", Sex.FEMALE, "ST2024002"));
+        group.addStudent(studentCreator.createStudent("Dmitry", "Lysenko", "Vladimir", Sex.MALE, "ST2024003"));
     }
 }

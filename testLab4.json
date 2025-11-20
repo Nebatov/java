@@ -1,0 +1,277 @@
+{
+  "faculties": [
+    {
+      "departments": [
+        {
+          "groups": [
+            {
+              "students": [
+                {
+                  "studentId": "ID1111",
+                  "firstName": "Student",
+                  "lastName": "S11",
+                  "patronymic": "P",
+                  "sex": "MALE"
+                },
+                {
+                  "studentId": "ID1112",
+                  "firstName": "Student",
+                  "lastName": "S12",
+                  "patronymic": "P",
+                  "sex": "FEMALE"
+                }
+              ],
+              "name": "Group 1.1.1",
+              "head": {
+                "firstName": "Curator",
+                "lastName": "G111",
+                "patronymic": "P",
+                "sex": "FEMALE"
+              }
+            },
+            {
+              "students": [
+                {
+                  "studentId": "ID1121",
+                  "firstName": "Student",
+                  "lastName": "S21",
+                  "patronymic": "P",
+                  "sex": "MALE"
+                },
+                {
+                  "studentId": "ID1122",
+                  "firstName": "Student",
+                  "lastName": "S22",
+                  "patronymic": "P",
+                  "sex": "FEMALE"
+                }
+              ],
+              "name": "Group 1.1.2",
+              "head": {
+                "firstName": "Curator",
+                "lastName": "G112",
+                "patronymic": "P",
+                "sex": "FEMALE"
+              }
+            }
+          ],
+          "name": "Department 1.1",
+          "head": {
+            "firstName": "Head",
+            "lastName": "D11",
+            "patronymic": "P",
+            "sex": "FEMALE"
+          }
+        },
+        {
+          "groups": [
+            {
+              "students": [
+                {
+                  "studentId": "ID1211",
+                  "firstName": "Student",
+                  "lastName": "S11",
+                  "patronymic": "P",
+                  "sex": "MALE"
+                },
+                {
+                  "studentId": "ID1212",
+                  "firstName": "Student",
+                  "lastName": "S12",
+                  "patronymic": "P",
+                  "sex": "FEMALE"
+                }
+              ],
+              "name": "Group 1.2.1",
+              "head": {
+                "firstName": "Curator",
+                "lastName": "G121",
+                "patronymic": "P",
+                "sex": "FEMALE"
+              }
+            },
+            {
+              "students": [
+                {
+                  "studentId": "ID1221",
+                  "firstName": "Student",
+                  "lastName": "S21",
+                  "patronymic": "P",
+                  "sex": "MALE"
+                },
+                {
+                  "studentId": "ID1222",
+                  "firstName": "Student",
+                  "lastName": "S22",
+                  "patronymic": "P",
+                  "sex": "FEMALE"
+                }
+              ],
+              "name": "Group 1.2.2",
+              "head": {
+                "firstName": "Curator",
+                "lastName": "G122",
+                "patronymic": "P",
+                "sex": "FEMALE"
+              }
+            }
+          ],
+          "name": "Department 1.2",
+          "head": {
+            "firstName": "Head",
+            "lastName": "D12",
+            "patronymic": "P",
+            "sex": "FEMALE"
+          }
+        }
+      ],
+      "name": "Faculty 1",
+      "head": {
+        "firstName": "Dean",
+        "lastName": "F1",
+        "patronymic": "P",
+        "sex": "MALE"
+      }
+    },
+    {
+      "departments": [
+        {
+          "groups": [
+            {
+              "students": [
+                {
+                  "studentId": "ID2111",
+                  "firstName": "Student",
+                  "lastName": "S11",
+                  "patronymic": "P",
+                  "sex": "MALE"
+                },
+                {
+                  "studentId": "ID2112",
+                  "firstName": "Student",
+                  "lastName": "S12",
+                  "patronymic": "P",
+                  "sex": "FEMALE"
+                }
+              ],
+              "name": "Group 2.1.1",
+              "head": {
+                "firstName": "Curator",
+                "lastName": "G211",
+                "patronymic": "P",
+                "sex": "FEMALE"
+              }
+            },
+            {
+              "students": [
+                {
+                  "studentId": "ID2121",
+                  "firstName": "Student",
+                  "lastName": "S21",
+                  "patronymic": "P",
+                  "sex": "MALE"
+                },
+                {
+                  "studentId": "ID2122",
+                  "firstName": "Student",
+                  "lastName": "S22",
+                  "patronymic": "P",
+                  "sex": "FEMALE"
+                }
+              ],
+              "name": "Group 2.1.2",
+              "head": {
+                "firstName": "Curator",
+                "lastName": "G212",
+                "patronymic": "P",
+                "sex": "FEMALE"
+              }
+            }
+          ],
+          "name": "Department 2.1",
+          "head": {
+            "firstName": "Head",
+            "lastName": "D21",
+            "patronymic": "P",
+            "sex": "FEMALE"
+          }
+        },
+        {
+          "groups": [
+            {
+              "students": [
+                {
+                  "studentId": "ID2211",
+                  "firstName": "Student",
+                  "lastName": "S11",
+                  "patronymic": "P",
+                  "sex": "MALE"
+                },
+                {
+                  "studentId": "ID2212",
+                  "firstName": "Student",
+                  "lastName": "S12",
+                  "patronymic": "P",
+                  "sex": "FEMALE"
+                }
+              ],
+              "name": "Group 2.2.1",
+              "head": {
+                "firstName": "Curator",
+                "lastName": "G221",
+                "patronymic": "P",
+                "sex": "FEMALE"
+              }
+            },
+            {
+              "students": [
+                {
+                  "studentId": "ID2221",
+                  "firstName": "Student",
+                  "lastName": "S21",
+                  "patronymic": "P",
+                  "sex": "MALE"
+                },
+                {
+                  "studentId": "ID2222",
+                  "firstName": "Student",
+                  "lastName": "S22",
+                  "patronymic": "P",
+                  "sex": "FEMALE"
+                }
+              ],
+              "name": "Group 2.2.2",
+              "head": {
+                "firstName": "Curator",
+                "lastName": "G222",
+                "patronymic": "P",
+                "sex": "FEMALE"
+              }
+            }
+          ],
+          "name": "Department 2.2",
+          "head": {
+            "firstName": "Head",
+            "lastName": "D22",
+            "patronymic": "P",
+            "sex": "FEMALE"
+          }
+        }
+      ],
+      "name": "Faculty 2",
+      "head": {
+        "firstName": "Dean",
+        "lastName": "F2",
+        "patronymic": "P",
+        "sex": "MALE"
+      }
+    }
+  ],
+  "name": "Test University",
+  "head": {
+    "firstName": "John",
+    "lastName": "Peterson",
+    "patronymic": "Michael",
+    "sex": "MALE"
+  }
+}

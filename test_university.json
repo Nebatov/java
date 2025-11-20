@@ -1,0 +1,277 @@
+{
+  "faculties": [
+    {
+      "departments": [
+        {
+          "groups": [
+            {
+              "students": [
+                {
+                  "studentId": "ID1111",
+                  "firstName": "Студент",
+                  "lastName": "S11",
+                  "patronymic": "П",
+                  "sex": "MALE"
+                },
+                {
+                  "studentId": "ID1112",
+                  "firstName": "Студент",
+                  "lastName": "S12",
+                  "patronymic": "П",
+                  "sex": "FEMALE"
+                }
+              ],
+              "name": "Група 1.1.1",
+              "head": {
+                "firstName": "Куратор",
+                "lastName": "Г111",
+                "patronymic": "П",
+                "sex": "FEMALE"
+              }
+            },
+            {
+              "students": [
+                {
+                  "studentId": "ID1121",
+                  "firstName": "Студент",
+                  "lastName": "S21",
+                  "patronymic": "П",
+                  "sex": "MALE"
+                },
+                {
+                  "studentId": "ID1122",
+                  "firstName": "Студент",
+                  "lastName": "S22",
+                  "patronymic": "П",
+                  "sex": "FEMALE"
+                }
+              ],
+              "name": "Група 1.1.2",
+              "head": {
+                "firstName": "Куратор",
+                "lastName": "Г112",
+                "patronymic": "П",
+                "sex": "FEMALE"
+              }
+            }
+          ],
+          "name": "Кафедра 1.1",
+          "head": {
+            "firstName": "Завідувач",
+            "lastName": "К11",
+            "patronymic": "П",
+            "sex": "FEMALE"
+          }
+        },
+        {
+          "groups": [
+            {
+              "students": [
+                {
+                  "studentId": "ID1211",
+                  "firstName": "Студент",
+                  "lastName": "S11",
+                  "patronymic": "П",
+                  "sex": "MALE"
+                },
+                {
+                  "studentId": "ID1212",
+                  "firstName": "Студент",
+                  "lastName": "S12",
+                  "patronymic": "П",
+                  "sex": "FEMALE"
+                }
+              ],
+              "name": "Група 1.2.1",
+              "head": {
+                "firstName": "Куратор",
+                "lastName": "Г121",
+                "patronymic": "П",
+                "sex": "FEMALE"
+              }
+            },
+            {
+              "students": [
+                {
+                  "studentId": "ID1221",
+                  "firstName": "Студент",
+                  "lastName": "S21",
+                  "patronymic": "П",
+                  "sex": "MALE"
+                },
+                {
+                  "studentId": "ID1222",
+                  "firstName": "Студент",
+                  "lastName": "S22",
+                  "patronymic": "П",
+                  "sex": "FEMALE"
+                }
+              ],
+              "name": "Група 1.2.2",
+              "head": {
+                "firstName": "Куратор",
+                "lastName": "Г122",
+                "patronymic": "П",
+                "sex": "FEMALE"
+              }
+            }
+          ],
+          "name": "Кафедра 1.2",
+          "head": {
+            "firstName": "Завідувач",
+            "lastName": "К12",
+            "patronymic": "П",
+            "sex": "FEMALE"
+          }
+        }
+      ],
+      "name": "Факультет 1",
+      "head": {
+        "firstName": "Декан",
+        "lastName": "Ф1",
+        "patronymic": "П",
+        "sex": "MALE"
+      }
+    },
+    {
+      "departments": [
+        {
+          "groups": [
+            {
+              "students": [
+                {
+                  "studentId": "ID2111",
+                  "firstName": "Студент",
+                  "lastName": "S11",
+                  "patronymic": "П",
+                  "sex": "MALE"
+                },
+                {
+                  "studentId": "ID2112",
+                  "firstName": "Студент",
+                  "lastName": "S12",
+                  "patronymic": "П",
+                  "sex": "FEMALE"
+                }
+              ],
+              "name": "Група 2.1.1",
+              "head": {
+                "firstName": "Куратор",
+                "lastName": "Г211",
+                "patronymic": "П",
+                "sex": "FEMALE"
+              }
+            },
+            {
+              "students": [
+                {
+                  "studentId": "ID2121",
+                  "firstName": "Студент",
+                  "lastName": "S21",
+                  "patronymic": "П",
+                  "sex": "MALE"
+                },
+                {
+                  "studentId": "ID2122",
+                  "firstName": "Студент",
+                  "lastName": "S22",
+                  "patronymic": "П",
+                  "sex": "FEMALE"
+                }
+              ],
+              "name": "Група 2.1.2",
+              "head": {
+                "firstName": "Куратор",
+                "lastName": "Г212",
+                "patronymic": "П",
+                "sex": "FEMALE"
+              }
+            }
+          ],
+          "name": "Кафедра 2.1",
+          "head": {
+            "firstName": "Завідувач",
+            "lastName": "К21",
+            "patronymic": "П",
+            "sex": "FEMALE"
+          }
+        },
+        {
+          "groups": [
+            {
+              "students": [
+                {
+                  "studentId": "ID2211",
+                  "firstName": "Студент",
+                  "lastName": "S11",
+                  "patronymic": "П",
+                  "sex": "MALE"
+                },
+                {
+                  "studentId": "ID2212",
+                  "firstName": "Студент",
+                  "lastName": "S12",
+                  "patronymic": "П",
+                  "sex": "FEMALE"
+                }
+              ],
+              "name": "Група 2.2.1",
+              "head": {
+                "firstName": "Куратор",
+                "lastName": "Г221",
+                "patronymic": "П",
+                "sex": "FEMALE"
+              }
+            },
+            {
+              "students": [
+                {
+                  "studentId": "ID2221",
+                  "firstName": "Студент",
+                  "lastName": "S21",
+                  "patronymic": "П",
+                  "sex": "MALE"
+                },
+                {
+                  "studentId": "ID2222",
+                  "firstName": "Студент",
+                  "lastName": "S22",
+                  "patronymic": "П",
+                  "sex": "FEMALE"
+                }
+              ],
+              "name": "Група 2.2.2",
+              "head": {
+                "firstName": "Куратор",
+                "lastName": "Г222",
+                "patronymic": "П",
+                "sex": "FEMALE"
+              }
+            }
+          ],
+          "name": "Кафедра 2.2",
+          "head": {
+            "firstName": "Завідувач",
+            "lastName": "К22",
+            "patronymic": "П",
+            "sex": "FEMALE"
+          }
+        }
+      ],
+      "name": "Факультет 2",
+      "head": {
+        "firstName": "Декан",
+        "lastName": "Ф2",
+        "patronymic": "П",
+        "sex": "MALE"
+      }
+    }
+  ],
+  "name": "Тестовий Університет",
+  "head": {
+    "firstName": "Іван",
+    "lastName": "Петренко",
+    "patronymic": "Миколайович",
+    "sex": "MALE"
+  }
+}
