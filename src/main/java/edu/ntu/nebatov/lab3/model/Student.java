@@ -3,10 +3,12 @@ import java.util.Objects;
 
 public class Student extends Human {
     private final String studentId;
+    private final String birthDate;
 
-    public Student(String firstName, String lastName, String patronymic, Sex sex, String studentId) {
+    public Student(String firstName, String lastName, String patronymic, Sex sex, String studentId, String birthDate) {
         super(firstName, lastName, patronymic, sex);
         this.studentId = studentId;
+        this.birthDate = birthDate;
     }
 
     public String getStudentId() {
@@ -19,6 +21,9 @@ public class Student extends Human {
         if (!super.equals(o)) return false;
         Student student = (Student) o;
         return studentId.equals(student.studentId);
+    }
+    public String getBirthDate() {
+        return birthDate;
     }
 
     @Override

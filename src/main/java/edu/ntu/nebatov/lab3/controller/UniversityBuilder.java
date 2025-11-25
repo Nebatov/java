@@ -61,8 +61,8 @@ public class UniversityBuilder {
     }
 
     private void populateGroup(Group group) {
-        group.addStudent(studentCreator.createStudent("Andrew", "Tkachenko", "Ivan", Sex.MALE, "ST2024001"));
-        group.addStudent(studentCreator.createStudent("Anna", "Bondarenko", "Sergey", Sex.FEMALE, "ST2024002"));
-        group.addStudent(studentCreator.createStudent("Dmitry", "Lysenko", "Vladimir", Sex.MALE, "ST2024003"));
+        group.addStudent(studentCreator.createStudent("Andrew", "Tkachenko", "Ivan", Sex.MALE, "ST2024001", "22.03.2005"));
+        group.addStudent(studentCreator.createStudent("Anna", "Bondarenko", "Sergey", Sex.FEMALE, "ST2024002", "22.03.2005"));
+        group.addStudent(studentCreator.createStudent("Dmitry", "Lysenko", "Vladimir", Sex.MALE, "ST2024003", "22.03.2005"));
     }
 }
